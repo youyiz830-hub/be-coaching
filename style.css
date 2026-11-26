@@ -1,0 +1,30 @@
+/* Be-Buddy カスタマイズ型伴走支援 LP */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:#FBFAF7}
+img{max-width:100%}
+a{color:#061B35}a:hover{color:#B9822B}
+h1,h2,h3,p{margin:0}
+button{font-family:inherit}
+.sec{max-width:1120px;margin:0 auto;padding:120px 32px;box-sizing:border-box}
+.eyebrow{font-size:13px;letter-spacing:.2em;font-weight:700;color:#9B681D}
+.h2{font-size:clamp(26px,3.4vw,42px);font-weight:900;line-height:1.5;color:#061B35}
+.serif{font-family:'Noto Serif JP',serif}
+.gold{background:linear-gradient(110deg,#9b681d 0%,#b9822b 20%,#f3d59a 52%,#d5a44e 74%,#9b681d 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.mark{background:linear-gradient(transparent 66%,rgba(243,213,154,.85) 66%)}
+.card{background:#fff;border:1px solid #D9DFE6;border-radius:20px;overflow:hidden;box-shadow:0 16px 38px rgba(6,27,53,.09)}
+.band{background:#061B35;color:#F3D59A;font-weight:700;padding:18px 24px}
+.cta3d{display:inline-block;background:linear-gradient(110deg,#9b681d 0%,#b9822b 20%,#f3d59a 52%,#d5a44e 74%,#9b681d 100%);color:#061B35;font-weight:900;text-decoration:none;border-radius:999px;box-shadow:0 6px 0 #805516,0 16px 28px rgba(155,104,29,.28)}
+.cta3d:hover{color:#061B35;transform:translateY(2px);box-shadow:0 4px 0 #805516,0 10px 20px rgba(155,104,29,.25)}
+.ph{background:linear-gradient(145deg,#0d2b4b,#061B35);color:#F3D59A;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;font-size:14px;font-weight:700;text-align:center}
+.chip{display:inline-block;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700}
+@media (max-width:760px){.sec{padding:80px 20px}.hide-sp{display:none!important}.cta3d{padding:17px 24px!important;font-size:16px!important}}
+
+.plan-tab{font-size:15px;font-weight:700;padding:13px 22px;border-radius:999px;cursor:pointer;min-height:44px;background:#fff;color:#061B35;border:1px solid #D9DFE6;transition:all .2s}
+.plan-tab[aria-selected="true"]{background:#061B35;color:#F3D59A;border-color:#061B35;box-shadow:0 10px 22px rgba(6,27,53,.22)}
+.step{display:flex;gap:16px;align-items:flex-start;padding:12px 0;border-bottom:1px solid #EDF1F5}
+.step b{flex:0 0 34px;height:34px;border-radius:50%;background:#061B35;color:#F3D59A;font-weight:900;display:flex;align-items:center;justify-content:center;font-size:14px}
+.step p{color:#1B2633;font-size:15px;font-weight:500;padding-top:4px}
+.combo{display:inline-block;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;background:rgba(243,213,154,.16);border:1px solid rgba(243,213,154,.5);color:#F3D59A}
+:focus-visible{outline:3px solid #B9822B;outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
