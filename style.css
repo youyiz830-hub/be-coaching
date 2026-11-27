@@ -98,3 +98,7 @@ button{font-family:inherit}
 .state-arrow b{white-space:nowrap}
 .state-arrow b::after{content:" ↓"}
 .menu-card.on::after{content:"目指す状態"}
+.state-grid.g5{grid-template-columns:repeat(auto-fit,minmax(190px,1fr))}
+.state-grid.g5 .menu-top{flex-direction:column;align-items:flex-start;gap:10px}
+.area-tag{align-self:flex-start;font-size:11px;font-weight:900;letter-spacing:.08em;color:#9B681D;background:#F7ECD8;border-radius:999px;padding:2px 12px}
+.state-wrap .menu-ic{width:46px;min-height:46px}
