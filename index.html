@@ -102,26 +102,20 @@
 </section>
 
 <section style="background:#fff">
-<div class="sec" style="display:flex;flex-direction:column;gap:56px">
+<div class="sec" style="display:flex;flex-direction:column;gap:40px">
 <div style="display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center">
 <p class="eyebrow">オーダーメイドの理由</p>
-<h2 class="h2">同じ「動けない」でも、<br>止まっている場所は、人によって違う。</h2>
-<p style="max-width:680px;color:#596676">これまで300人以上と向き合ってきて、分かったことがあります。<br>人が止まる理由は、大きく3つに分かれる。</p>
+<h2 class="h2">止まっている場所は、<br>人によって違う。</h2>
+<p class="serif" style="font-size:clamp(17px,1.9vw,22px);font-weight:900;color:#061B35;line-height:1.8">だから、決まったカリキュラムは渡しません。<br>あなたが止まっている場所から、始めます。</p>
 </div>
-<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
-<div class="card type-card" data-type="t1"><img src="type1.svg" alt="分かれ道で立ち止まり迷う人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ1</p><h3 style="font-size:21px;font-weight:900;color:#061B35">失敗が怖くて、止まる人</h3><p style="color:#596676;font-size:15px">正解を探しているうちに、時間だけが過ぎていく。間違えないことが、いつの間にか目的になっている。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 行動を止めている「思い込み」に気づく。</p><button type="button" class="pick-type" data-type="t1" aria-pressed="false">これが近い</button></div></div>
-<div class="card type-card" data-type="t2"><img src="type2.svg" alt="霧の中で進む方向を探す人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ2</p><h3 style="font-size:21px;font-weight:900;color:#061B35">行き先が見えなくて、止まる人</h3><p style="color:#596676;font-size:15px">頑張れる。でも、何のために頑張っているのか分からない。他人の正解を、自分の夢だと思い込んでいる。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 本当に望む未来を、自分の言葉で決める。</p><button type="button" class="pick-type" data-type="t2" aria-pressed="false">これが近い</button></div></div>
-<div class="card type-card" data-type="t3"><img src="type3.svg" alt="歯車とパズルで仕組みを組み立てる人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ3</p><h3 style="font-size:21px;font-weight:900;color:#061B35">決めたのに、続かなくて止まる人</h3><p style="color:#596676;font-size:15px">熱はある。覚悟もある。ただ、毎日に落とし込めていない。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 理想から逆算した行動と、続く仕組みをつくる。</p><button type="button" class="pick-type" data-type="t3" aria-pressed="false">これが近い</button></div></div>
-</div>
-<p class="serif" style="text-align:center;font-size:clamp(18px,2vw,24px);font-weight:900;color:#061B35;line-height:1.8">だから、決まったカリキュラムは渡しません。<br>あなたが止まっている場所から、始めます。</p>
 <div class="builder" id="builder">
 <p class="b-title serif">あなたなら、どう向き合う？</p>
 <p class="b-sub">僕らは、あなたがどこで止まっているかを見立てて、必要なことだけを選びます。<br>2つ選ぶと、あなたに合わせたプランの例ができあがります。</p>
 <div class="b-q"><span>質問1</span><p>止まっている理由に近いのは？</p></div>
-<div class="b-row" id="type-row">
-<button type="button" class="b-opt" data-type="t1">失敗が怖くて、止まっている<small>気持ち・意味づけで止まる</small></button>
-<button type="button" class="b-opt" data-type="t2">行き先が見えなくて、止まっている<small>ゴールが定まらず止まる</small></button>
-<button type="button" class="b-opt" data-type="t3">決めたのに、続かなくて止まっている<small>行動・習慣で止まる</small></button>
+<div class="type-row" id="type-row">
+<button type="button" class="type-opt" data-type="t1"><img src="type1.svg" alt="" aria-hidden="true"><span class="t-name">失敗が怖くて、止まっている</span><span class="t-desc">正解を探しているうちに、時間だけが過ぎていく。間違えないことが、いつの間にか目的になっている。</span><span class="t-where">気持ち・意味づけで止まる</span></button>
+<button type="button" class="type-opt" data-type="t2"><img src="type2.svg" alt="" aria-hidden="true"><span class="t-name">行き先が見えなくて、止まっている</span><span class="t-desc">頑張れる。でも、何のために頑張っているのか分からない。他人の正解を、自分の夢だと思い込んでいる。</span><span class="t-where">ゴールが定まらず止まる</span></button>
+<button type="button" class="type-opt" data-type="t3"><img src="type3.svg" alt="" aria-hidden="true"><span class="t-name">決めたのに、続かなくて止まっている</span><span class="t-desc">熱はある。覚悟もある。ただ、毎日に落とし込めていない。</span><span class="t-where">行動・習慣で止まる</span></button>
 </div>
 <div class="b-q"><span>質問2</span><p>変わりたいのは、どの分野？</p></div>
 <div class="b-row" id="area-row">

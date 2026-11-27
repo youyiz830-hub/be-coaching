@@ -98,10 +98,7 @@ ${steps.map((x, i) => `<div class="step"><b>${i + 1}</b><p>${x}</p></div>`).join
   if (grid) grid.querySelectorAll('.menu-card').forEach((el) => el.classList.toggle('on', states.includes(el.dataset.key)));
 }
 
-document.querySelectorAll('.pick-type, #type-row [data-type]').forEach((b) => b.addEventListener('click', () => {
-  pick.type = b.dataset.type; renderPlan();
-  if (b.classList.contains('pick-type')) document.getElementById('builder').scrollIntoView({ behavior: 'smooth', block: 'start' });
-}));
+document.querySelectorAll('#type-row [data-type]').forEach((b) => b.addEventListener('click', () => { pick.type = b.dataset.type; renderPlan(); }));
 document.querySelectorAll('#area-row [data-area]').forEach((b) => b.addEventListener('click', () => { pick.area = b.dataset.area; renderPlan(); }));
 
 function applyLinks(root) {
