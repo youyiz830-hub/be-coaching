@@ -57,3 +57,25 @@ button{font-family:inherit}
 .ib{display:inline-block}
 .hero-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
 @media (max-width:900px){.hero-grid{grid-template-columns:1fr}}
+/* --- YOUR PLAN：できること6つ＋組み合わせ --- */
+.menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:18px}
+.menu-card{background:#fff;border:1px solid #D9DFE6;border-radius:20px;padding:24px 24px 22px;box-shadow:0 14px 32px rgba(6,27,53,.07);display:flex;flex-direction:column;gap:14px;transition:all .3s;position:relative}
+.menu-top{display:flex;gap:14px;align-items:center}
+.menu-ic{flex:0 0 52px;height:52px;border-radius:16px;background:#061B35;display:flex;align-items:center;justify-content:center;transition:all .3s}
+.menu-ic svg{width:26px;height:26px;fill:none;stroke:#F3D59A;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.menu-name{font-weight:900;color:#061B35;font-size:19px;line-height:1.4}
+.menu-lead{font-size:13px;color:#596676;line-height:1.6;font-weight:700}
+.menu-list{margin:0;padding:14px 0 0;border-top:1px solid #EDF1F5;list-style:none;display:flex;flex-direction:column;gap:6px}
+.menu-list li{font-size:14px;color:#3A4757;padding-left:20px;position:relative;line-height:1.6}
+.menu-list li::before{content:"✓";position:absolute;left:0;color:#B9822B;font-weight:900}
+.menu-grid.picking .menu-card{opacity:.45;transform:scale(.98)}
+.menu-grid.picking .menu-card.on{opacity:1;transform:translateY(-6px);border-color:#B9822B;box-shadow:0 22px 44px rgba(155,104,29,.22)}
+.menu-card.on .menu-ic{background:linear-gradient(110deg,#9b681d,#f3d59a,#b9822b)}
+.menu-card.on .menu-ic svg{stroke:#061B35}
+.menu-card.on::after{content:"このプランで使う";position:absolute;top:-12px;right:18px;background:#061B35;color:#F3D59A;font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px}
+.combo-box{background:#fff;border:1px solid #D9DFE6;border-radius:28px;padding:36px clamp(18px,3vw,40px);display:flex;flex-direction:column;gap:28px;box-shadow:0 24px 50px rgba(6,27,53,.1)}
+.tab-row{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.combo-result{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));border-radius:20px;overflow:hidden;border:1px solid #D9DFE6}
+.combo-left{background:linear-gradient(145deg,#061B35,#0D2B4B);padding:30px;display:flex;flex-direction:column;gap:12px}
+.combo-right{padding:30px;background:#FCFBF8}
+.combo-plus{color:#F3D59A;font-weight:900}
