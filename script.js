@@ -1,7 +1,7 @@
 // 公式LINEのURLをここに設定すると、すべての「無料相談」ボタンのリンク先に反映されます
 const LINE_URL = '';
 // セミナー申込ページのURLをここに設定すると、すべての「セミナーに参加する」ボタンに反映されます
-const SEMINAR_URL = '';
+const SEMINAR_URL = 'https://seminar-lp-eight.vercel.app/offline.html?v=3';
 
 // ▼ オーダーメイドの理由：2つ選ぶと、プランの例ができる
 // 「現状 → 止めているもの → 目指す状態 → 道のり」の順で見立てる
