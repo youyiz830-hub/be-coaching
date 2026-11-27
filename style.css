@@ -171,3 +171,9 @@ button{font-family:inherit}
 .t-name{padding:0!important;font-size:15px!important}
 .t-where{margin:0!important}
 @media (max-width:600px){.type-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}.type-opt{padding:12px!important;min-height:0}.t-name{font-size:13px!important}.t-where{font-size:10px!important;padding:2px 8px!important}}
+.b-formula{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;background:linear-gradient(145deg,#FCF8F0,#F7ECD8);border:1px solid rgba(185,130,43,.4);border-radius:18px;padding:26px 18px;margin:4px 0 10px}
+.b-formula span{font-family:'Noto Serif JP',serif;font-weight:900;color:#061B35;font-size:clamp(18px,2vw,22px);background:#fff;border-radius:12px;padding:10px 16px;box-shadow:0 8px 18px rgba(6,27,53,.08)}
+.b-formula b{font-size:26px;color:#B9822B}
+.b-for{font-size:13px;color:#596676}
+#area-row .t-where{background:#EDF1F5;color:#3A4757}
+@media (min-width:900px){#type-row,#area-row{grid-template-columns:repeat(5,minmax(0,1fr))!important}}

@@ -6,23 +6,18 @@ const SEMINAR_URL = '';
 // ▼ オーダーメイドの理由：2つ選ぶと、プランの例ができる
 // 「現状 → 止めているもの → 目指す状態 → 道のり」の順で見立てる
 const TYPES = {
-  t1: { short: '失敗が怖くて一歩目が出ない', where: '気持ちと意味づけ', now: '正解を探しているうちに、時間だけが過ぎていく。', belief: '「間違えてはいけない」「成功しなければ価値がない」', protect: '失敗しない・恥をかかない・評価を失わないという安心', shift: '「失敗しても、自分の価値は変わらない」と腹落ちし、小さく動ける自分に戻る', questions: ['それを止めているものは、何ですか？', 'もし成功しなくても自分に価値があるとしたら、今、何をしますか？'], state: ['decide'] },
-  t2: { short: 'やりたいことが分からない', where: 'ゴール', now: '頑張れる。でも、何のために頑張っているのか分からない。', belief: '「期待に応えるべき」「これが正解のはず」', protect: '周りの期待に応えている安心と、自分で選ばなくていい楽さ', shift: '今の延長線の外にある、本当に望む未来を描き、自分の言葉で握り直す', questions: ['このまま今の延長線を進んだら、5年後どうなっていますか？', 'もし何の制約もなかったら、本当はどうなっていたいですか？'], state: ['want'] },
-  t3: { short: '決めたのに続かない', where: '行動と習慣', now: '熱も覚悟もある。ただ、毎日に落とし込めていない。', belief: '「気合いが足りないからだ」「自分は続かない人間だ」', protect: 'これ以上、自分にがっかりしなくて済む安心', shift: '続かない理由を意志の弱さにせず、行動と環境の設計で続く形にする', questions: ['もしその思い込みがなかったら、違う行動を選べますか？', '続けるために、まず何を変えれば一番ラクになりますか？'], state: ['decide', 'want'] },
-  t4: { short: '「自分には無理」と思ってしまう', where: '自己像', now: 'やりたい気持ちはあるのに、「自分なんかが」と先に引いてしまう。', belief: '「自分には才能がない」「自分はこういう人間だ」', protect: '挑戦して傷つかずに済む安心', shift: '過去の自分ではなく、これからの自分で、自分を定義し直す', questions: ['その「自分はこういう人間だ」は、いつ、誰が決めましたか？', 'その自己像は、あなたの何を守っていますか？'], state: ['strength', 'decide'] },
-  t5: { short: '人の目が気になって決められない', where: '価値観', now: '周りにどう思われるかを考えるうちに、自分の本音が分からなくなる。', belief: '「嫌われてはいけない」「期待に応えなければ」', protect: '認められている安心と、居場所を失わないこと', shift: '人の評価ではなく、自分が大切にしたい価値観で選べるようにする', questions: ['誰にも評価されないとしても、それをやりたいですか？', 'あなたが本当に大切にしたいものは、何ですか？'], state: ['want', 'decide'] },
-  t6: { short: '一人で抱え込んでしまう', where: '役割と自己像', now: '自分がやった方が早い。気づけば、全部を自分で背負っている。', belief: '「完璧にできない人に任せるのは無責任」「自分がいないと回らない」', protect: '自分の価値と、コントロールできている安心', shift: '「任せる＝手放す」ではなく「任せる＝人を育てる」と捉え直す', questions: ['もしその信念がなかったら、違う行動を選べますか？', 'それを手放したら、何が一番困りますか？'], state: ['decide'] },
-  t7: { short: '忙しさに追われている', where: '状態と環境', now: '毎日をこなすだけで精一杯。考える時間も、気力も残っていない。', belief: '「休んだら置いていかれる」「今は頑張るしかない」', protect: '立ち止まって現実を見なくて済むこと', shift: '頑張りを足すのではなく、余計な力みと予定を減らし、本来の力が出る状態をつくる', questions: ['何かを足す前に、今のあなたを邪魔しているものは何ですか？', 'もし一つだけやめるとしたら、何をやめますか？'], state: ['decide', 'want'] },
-  t8: { short: '頑張っても成果につながらない', where: '基準と環境', now: '行動量は足りているはず。なのに、結果が変わらない。', belief: '「もっと頑張れば、いつか報われる」', protect: 'やり方を変える怖さを感じずに済むこと', shift: '頑張る量ではなく、基準と環境を変えて、結果が出る形に変える', questions: ['その結果を生んでいる「当たり前」は、何ですか？', '今の基準のまま1年続けたら、どうなっていますか？'], state: ['strength', 'decide'] }
+  t1: { short: '失敗が怖くて一歩目が出ない', where: '気持ちと意味づけ', now: '正解を探しているうちに、時間だけが過ぎていく。', belief: '「間違えてはいけない」「成功しなければ価値がない」', support: '前提の書き換え', state: ['decide'] },
+  t2: { short: 'やりたいことが分からない', where: 'ゴール', now: '頑張れる。でも、何のために頑張っているのか分からない。', belief: '「期待に応えるべき」「これが正解のはず」', support: '強みとゴールの特定', state: ['strength', 'want'] },
+  t3: { short: '決めたのに続かない', where: '行動と習慣', now: '熱も覚悟もある。ただ、毎日に落とし込めていない。', belief: '「気合いが足りないからだ」「自分は続かない人間だ」', support: '行動と習慣の設計', state: ['decide', 'want'] },
+  t4: { short: '一人で抱え込んでしまう', where: '役割と自己像', now: '自分がやった方が早い。気づけば、全部を自分で背負っている。', belief: '「完璧にできない人に任せるのは無責任」「自分がいないと回らない」', support: '強みの特定と役割の再設計', state: ['strength', 'decide'] },
+  t5: { short: '頑張っても成果につながらない', where: '基準と環境', now: '行動量は足りているはず。なのに、結果が変わらない。', belief: '「もっと頑張れば、いつか報われる」', support: '基準と戦略の見直し', state: ['strength', 'decide'] }
 };
 const AREAS = {
-  career: { name: 'キャリア', goal: 'キャリアを、自分で選べる', outer: '昇進も転職も、次の一手を自分の意思で選び、動き出す', state: 'career' },
-  indep: { name: '独立', goal: '自分の名前で、仕事ができる', outer: '提供できる価値を形にし、最初のお客さんと出会う', state: 'indep' },
-  side: { name: '副業', goal: '本業の外に、もう一つの軸を持てる', outer: 'やりたいことを副業として形にし、本業と両立しながら続ける', state: 'side' },
-  biz: { name: '事業', goal: '想いを事業にして、伸ばせる', outer: '商品・集客・届け方を仕組みにして、一人に頼らない形で伸ばす', state: 'biz' },
-  team: { name: 'マネジメント・組織', goal: 'チームを、率いられる', outer: '任せ方と育て方を変え、メンバーの可能性を引き出してチームで成果を出す', state: 'team' },
-  rel: { name: '人間関係', goal: '大切な人と、いい関係を築ける', outer: '家族・パートナー・職場で本音を伝え、関わり方を選び直す', state: null },
-  self: { name: '自分の生き方', goal: '自分で決めた未来を、生きられる', outer: '強みと望みが重なる場所を一緒に探し、最初の一歩を決める', state: null }
+  career: { goal: 'キャリアを、自分で選べる', support: 'キャリア支援', state: ['career'] },
+  indep: { goal: '自分の名前で、仕事ができる', support: '独立・副業支援', state: ['indep', 'side'] },
+  biz: { goal: '想いを事業にして、伸ばせる', support: '経営・事業づくり支援', state: ['biz', 'team'] },
+  team: { goal: 'チームを、率いられる', support: 'マネジメント支援', state: ['team'] },
+  self: { goal: '自分で決めた未来を、生きられる', support: '生き方の伴走', state: [] }
 };
 const NAMES = { strength: '強みがわかる', want: 'やりたいことがわかる', decide: '自分で決められる', career: 'キャリアを選べる', indep: '自分の名前で仕事ができる', side: 'もう一つの軸を持てる', biz: '事業を伸ばせる', team: 'チームを率いられる' };
 
@@ -46,13 +41,7 @@ function renderPlan() {
   }
   const t = TYPES[pick.type];
   const a = AREAS[pick.area];
-  const states = ['strength', ...t.state, a.state].filter((k, i, arr) => k && arr.indexOf(k) === i);
-  const steps = [
-    '起きている事実と意味づけを分けて、止めている前提を一緒に見つける',
-    t.shift,
-    a.outer,
-    '行動と環境を設計し、次のセッションで結果を確かめる。決めたことを守るまで隣を走る'
-  ];
+  const states = [...t.state, ...a.state].filter((k, i, arr) => k && arr.indexOf(k) === i);
   result.innerHTML = `
 <div class="b-plan">
 <div class="b-left">
@@ -61,15 +50,13 @@ function renderPlan() {
 <div class="b-map">
 <div><span>今の状態</span><p>${t.now}<br><small>止まっている場所：${t.where}</small></p></div>
 <div><span>止めている前提</span><p>${t.belief}</p></div>
-<div><span>その前提が守っているもの</span><p>${t.protect}</p></div>
-<div><span>目指す状態</span><div class="b-chips">${states.map((k) => `<span class="combo">${NAMES[k]}</span>`).join('<span class="combo-plus">→</span>')}${a.state ? '' : `<span class="combo-plus">→</span><span class="combo">${a.goal}</span>`}</div></div>
+<div><span>目指す状態</span><div class="b-chips">${states.map((k) => `<span class="combo">${NAMES[k]}</span>`).join('<span class="combo-plus">→</span>')}${a.state.length ? '' : `${states.length ? '<span class="combo-plus">→</span>' : ''}<span class="combo">${a.goal}</span>`}</div></div>
 </div>
 </div>
 <div class="b-right">
-<p class="b-label dark">こんな問いから、始めます</p>
-<div class="b-qs">${t.questions.concat(['事実として確認すると、どうなりますか？']).map((q) => `<p>「${q}」</p>`).join('')}</div>
-<p class="b-label dark" style="padding-top:14px">こんな流れで、向き合います</p>
-${steps.map((x, i) => `<div class="step"><b>${i + 1}</b><p>${x}</p></div>`).join('')}
+<p class="b-label dark">あなたへの支援の組み合わせ</p>
+<div class="b-formula"><span>${t.support}</span><b>×</b><span>${a.support}</span></div>
+<p class="b-for">止まっている場所（${t.where}）と、変わりたい分野に合わせて、必要な支援だけを組み合わせます。</p>
 <p class="b-goal">その先に ── 強みを活かして、夢中で人の役に立つ。結果を出しながら、人生を楽しむ。</p>
 <div class="b-cta"><a href="#seminar" data-seminar class="btn-seminar" style="font-size:14px;padding:13px 20px">セミナーで体感する</a><a href="#contact" data-line class="cta3d" style="font-size:14px;padding:14px 20px">このプランを無料で相談する ↗</a></div>
 </div>
