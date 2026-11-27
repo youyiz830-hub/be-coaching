@@ -162,3 +162,12 @@ button{font-family:inherit}
 .type-opt img{grid-row:1 / span 3;width:96px;height:96px;object-fit:cover;border:0;border-radius:12px}
 .t-name{padding:0;font-size:15px}.t-desc{padding:0;font-size:12px}.t-where{margin:2px 0 0}
 }
+/* 質問1：8つの選択肢（イラストなし） */
+.type-row{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))!important;gap:10px!important}
+.type-opt{display:flex!important;flex-direction:column;gap:8px!important;padding:16px 18px!important;border-width:1px!important;border-radius:16px!important;justify-content:space-between;min-height:96px}
+.type-opt[aria-pressed="true"]{border-color:#061B35!important;background:#061B35}
+.type-opt[aria-pressed="true"] .t-name{color:#fff}
+.type-opt[aria-pressed="true"] .t-where{background:rgba(243,213,154,.18);color:#F3D59A}
+.t-name{padding:0!important;font-size:15px!important}
+.t-where{margin:0!important}
+@media (max-width:600px){.type-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}.type-opt{padding:12px!important;min-height:0}.t-name{font-size:13px!important}.t-where{font-size:10px!important;padding:2px 8px!important}}
