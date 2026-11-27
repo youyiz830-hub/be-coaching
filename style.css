@@ -68,8 +68,8 @@ button{font-family:inherit}
 .menu-list{margin:0;padding:14px 0 0;border-top:1px solid #EDF1F5;list-style:none;display:flex;flex-direction:column;gap:6px}
 .menu-list li{font-size:14px;color:#3A4757;padding-left:20px;position:relative;line-height:1.6}
 .menu-list li::before{content:"✓";position:absolute;left:0;color:#B9822B;font-weight:900}
-.menu-grid.picking .menu-card{opacity:.45;transform:scale(.98)}
-.menu-grid.picking .menu-card.on{opacity:1;transform:translateY(-6px);border-color:#B9822B;box-shadow:0 22px 44px rgba(155,104,29,.22)}
+#menu-grid.picking .menu-card{opacity:.45;transform:scale(.98)}
+#menu-grid.picking .menu-card.on{opacity:1;transform:translateY(-6px);border-color:#B9822B;box-shadow:0 22px 44px rgba(155,104,29,.22)}
 .menu-card.on .menu-ic{background:linear-gradient(110deg,#9b681d,#f3d59a,#b9822b)}
 .menu-card.on .menu-ic svg{stroke:#061B35}
 .menu-card.on::after{content:"このプランで使う";position:absolute;top:-12px;right:18px;background:#061B35;color:#F3D59A;font-size:11px;font-weight:700;padding:4px 12px;border-radius:999px}
@@ -79,3 +79,22 @@ button{font-family:inherit}
 .combo-left{background:linear-gradient(145deg,#061B35,#0D2B4B);padding:30px;display:flex;flex-direction:column;gap:12px}
 .combo-right{padding:30px;background:#FCFBF8}
 .combo-plus{color:#F3D59A;font-weight:900}
+/* --- YOUR PLAN：なれる状態（STEP1 自分を知る → STEP2 成果に変える） --- */
+.state-wrap{display:flex;flex-direction:column;gap:22px}
+.state-group{display:flex;flex-direction:column;gap:16px}
+.state-label{display:flex;align-items:center;gap:12px;font-weight:900;color:#061B35;font-size:18px}
+.state-label span{background:#061B35;color:#F3D59A;font-size:11px;letter-spacing:.12em;padding:4px 12px;border-radius:999px}
+.state-grid{display:grid;gap:16px}
+.state-grid.g3{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.state-grid.g4{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.state-wrap .menu-card{gap:12px;padding:22px}
+.state-wrap .menu-ic{flex:0 0 46px;height:46px;border-radius:14px}
+.state-wrap .menu-name{font-size:18px}
+.ba-before{font-size:13px;color:#8A94A3;font-weight:700;padding-top:12px;border-top:1px solid #EDF1F5}
+.ba-after{font-size:15px;color:#061B35;font-weight:700;line-height:1.65;padding-left:22px;position:relative}
+.ba-after::before{content:"→";position:absolute;left:0;color:#B9822B;font-weight:900}
+.state-arrow{display:flex;align-items:center;gap:14px;color:#9B681D;font-size:14px}
+.state-arrow span{flex:1;height:2px;background:repeating-linear-gradient(90deg,#B9822B 0 10px,transparent 10px 18px)}
+.state-arrow b{white-space:nowrap}
+.state-arrow b::after{content:" ↓"}
+.menu-card.on::after{content:"目指す状態"}

@@ -51,7 +51,7 @@
 <div style="position:absolute;left:0;bottom:6px;width:64%;min-width:250px;background:rgba(255,255,255,.98);border:1px solid #D9DFE6;border-radius:22px;padding:22px 24px;box-shadow:0 28px 56px rgba(6,27,53,.24);transform:rotateY(8deg) rotateX(2deg) translateZ(60px);display:flex;flex-direction:column;gap:12px">
 <div style="display:flex;justify-content:space-between;align-items:center"><span style="font-size:12px;font-weight:700;color:#9B681D;letter-spacing:.1em">YOUR PLAN</span><span class="chip" style="background:#061B35;color:#F3D59A;font-size:11px;padding:3px 10px">オーダーメイド</span></div>
 <p style="font-weight:900;color:#061B35;font-size:17px;line-height:1.5">GOAL：自分の名前で<br>仕事ができる状態へ</p>
-<div style="display:flex;flex-wrap:wrap;gap:6px"><span class="chip" style="background:#F7ECD8;color:#061B35;font-size:12px">コーチング</span><span class="chip" style="background:#F7ECD8;color:#061B35;font-size:12px">キャリア開発</span><span class="chip" style="background:#F7ECD8;color:#061B35;font-size:12px">副業支援</span></div>
+<div style="display:flex;flex-wrap:wrap;gap:6px"><span class="chip" style="background:#F7ECD8;color:#061B35;font-size:12px">強みがわかる</span><span class="chip" style="background:#F7ECD8;color:#061B35;font-size:12px">やりたいことがわかる</span><span class="chip" style="background:#F7ECD8;color:#061B35;font-size:12px">会社の外でも稼げる</span></div>
 <div><div style="display:flex;justify-content:space-between;font-size:12px;color:#596676;font-weight:700"><span>ゴールまで</span><span>STEP 3 / 5</span></div><div style="height:8px;border-radius:99px;background:#EDF1F5;overflow:hidden"><div style="width:62%;height:100%;background:linear-gradient(90deg,#b9822b,#f3d59a)"></div></div></div>
 </div>
 </div>
@@ -138,40 +138,34 @@
 <div style="display:flex;flex-direction:column;gap:18px;align-items:center;text-align:center">
 <p class="eyebrow">YOUR PLAN</p>
 <h2 class="h2">あなたの人生に、<br>既製品はいらない。</h2>
-<p style="max-width:660px;color:#596676">僕らができることは、この6つ。<br>あなたの叶えたい未来に合わせて、必要なものだけを組み合わせます。</p>
+<p style="max-width:680px;color:#596676">大切なのは、何を受けるかではなく、どんな状態になれるか。<br>まず自分を知り、それを仕事と人生の成果に変えていく。その道のりを、あなたに合わせて設計します。</p>
 </div>
 
-<div class="menu-grid" id="menu-grid">
-<div class="menu-card" data-key="coaching">
-<div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.5"/></svg></span><div><p class="menu-name">コーチング</p><p class="menu-lead">人生の軸とゴールを決めて、進み続ける</p></div></div>
-<ul class="menu-list"><li>叶えたい未来を言葉にする</li><li>止めている前提に気づき、外す</li><li>定期セッションで行動を続ける</li></ul>
+<div class="state-wrap" id="menu-grid">
+<div class="state-group">
+<p class="state-label"><span>STEP 1</span>まず、自分を知る</p>
+<div class="state-grid g3">
+<div class="menu-card" data-key="strength"><div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l2.6 5.6 6 .7-4.5 4.1 1.2 6L12 16.4 6.7 19.4l1.2-6L3.4 9.3l6-.7z"/></svg></span><p class="menu-name">自分の強みがわかる</p></div><p class="ba-before">「自分には、これといったものがない」</p><p class="ba-after">無意識に発揮していた強みを、自分の言葉で説明できる</p></div>
+<div class="menu-card" data-key="want"><div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.5-7 10-7 10z"/></svg></span><p class="menu-name">本当にやりたいことがわかる</p></div><p class="ba-before">「やりたいことが、分からない」</p><p class="ba-after">他人の正解ではなく、自分の言葉で未来を語れる</p></div>
+<div class="menu-card" data-key="decide"><div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></span><p class="menu-name">迷わず、自分で決められる</p></div><p class="ba-before">「正解が分かるまで、動けない」</p><p class="ba-after">不安があっても、自分で選んで一歩目を出せる</p></div>
 </div>
-<div class="menu-card" data-key="self">
-<div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg></span><div><p class="menu-name">自己理解</p><p class="menu-lead">強みと、本当に望むものを知る</p></div></div>
-<ul class="menu-list"><li>無意識に発揮している強みを言語化</li><li>価値観と大切にしたいことの整理</li><li>「他人の正解」と自分の望みを分ける</li></ul>
 </div>
-<div class="menu-card" data-key="career">
-<div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V14M10 20V10M16 20V6M3 9l6-5 4 3 7-5"/></svg></span><div><p class="menu-name">キャリア開発</p><p class="menu-lead">社内での昇進・転職・独立を選び、準備する</p></div></div>
-<ul class="menu-list"><li>これまでのキャリアの棚卸し</li><li>選択肢の整理と、次の一手の設計</li><li>新しい役割で成果を出す準備</li></ul>
+<div class="state-arrow" aria-hidden="true"><span></span><b>それを、成果に変える</b><span></span></div>
+<div class="state-group">
+<p class="state-label"><span>STEP 2</span>仕事と人生の成果に変える</p>
+<div class="state-grid g4">
+<div class="menu-card" data-key="career"><div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 20V14M10 20V10M16 20V6M3 9l6-5 4 3 7-5"/></svg></span><p class="menu-name">キャリアを自分で選べる</p></div><p class="ba-before">「このままでいいのか」が消えない</p><p class="ba-after">昇進・転職・独立を、自分の意思で選べる</p></div>
+<div class="menu-card" data-key="side"><div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2M3 12h18"/></svg></span><p class="menu-name">会社の外でも稼げる</p></div><p class="ba-before">収入の柱が、会社しかない</p><p class="ba-after">今の経験を活かして、副業で収入をつくれる</p></div>
+<div class="menu-card" data-key="biz"><div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19c0-6 4-12 14-14-1 10-7 14-13 14"/><path d="M5 19l6-6"/></svg></span><p class="menu-name">想いを事業にして伸ばせる</p></div><p class="ba-before">頑張っても、一人で回している</p><p class="ba-after">理想から逆算して、仕組みで伸びる事業をつくれる</p></div>
+<div class="menu-card" data-key="team"><div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.5-3.5 3-5.5 6-5.5s5.5 2 6 5.5M15 15c3 0 5 1.8 5.5 4.5"/></svg></span><p class="menu-name">チームを率いられる</p></div><p class="ba-before">任せられず、自分で抱え込む</p><p class="ba-after">人の可能性を引き出し、チームで成果を出せる</p></div>
 </div>
-<div class="menu-card" data-key="side">
-<div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5h8v2M3 12h18"/></svg></span><div><p class="menu-name">副業支援</p><p class="menu-lead">今の経験を活かして、会社の外で稼ぐ</p></div></div>
-<ul class="menu-list"><li>提供できる価値とサービスを設計</li><li>最初の顧客・案件を獲得するまで伴走</li><li>本業と両立できる進め方づくり</li></ul>
-</div>
-<div class="menu-card" data-key="biz">
-<div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 19c0-6 4-12 14-14-1 10-7 14-13 14"/><path d="M5 19l6-6"/></svg></span><div><p class="menu-name">ビジネス構築</p><p class="menu-lead">事業を立ち上げ、仕組みで伸ばす</p></div></div>
-<ul class="menu-list"><li>商品・サービスの設計</li><li>集客から契約までの流れづくり</li><li>届け方（デリバリー）の仕組み化</li></ul>
-</div>
-<div class="menu-card" data-key="team">
-<div class="menu-top"><span class="menu-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c.5-3.5 3-5.5 6-5.5s5.5 2 6 5.5M15 15c3 0 5 1.8 5.5 4.5"/></svg></span><div><p class="menu-name">マネジメント・組織づくり</p><p class="menu-lead">チームを率い、人を育てる</p></div></div>
-<ul class="menu-list"><li>リーダーとしての軸とビジョンづくり</li><li>メンバーの可能性を引き出す関わり方</li><li>採用・育成・チーム運営の仕組み</li></ul>
 </div>
 </div>
 
 <div class="combo-box">
 <div style="display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center">
-<p style="font-weight:900;color:#061B35;font-size:clamp(18px,2vw,22px)">あなたなら、どの組み合わせになる？</p>
-<p style="font-size:14px;color:#596676">叶えたい未来を選ぶと、上の6つのうち組み合わせる支援が光ります。</p>
+<p style="font-weight:900;color:#061B35;font-size:clamp(18px,2vw,22px)">あなたは、どんな状態になりたい？</p>
+<p style="font-size:14px;color:#596676">叶えたい未来を選ぶと、目指す状態が上で光ります。</p>
 <div id="plan-tabs" class="tab-row"></div>
 </div>
 <div class="combo-result">
@@ -179,14 +173,15 @@
 <p style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#F3D59A">PLAN EXAMPLE</p>
 <p id="plan-title" style="font-weight:900;font-size:clamp(19px,2vw,23px);line-height:1.55;color:#fff"></p>
 <p id="plan-who" style="color:#D8E0E9;font-size:14px"></p>
+<p style="font-size:12px;color:#F3D59A;font-weight:700;padding-top:4px">目指す状態</p>
 <div id="plan-combo" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"></div>
 </div>
 <div class="combo-right">
-<p style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#9B681D;padding-bottom:6px">伴走のイメージ</p>
+<p style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#9B681D;padding-bottom:6px">一緒に進む道のり</p>
 <div id="plan-steps"></div>
 </div>
 </div>
-<p style="font-size:13px;color:#596676;text-align:center">※ 組み合わせは一例です。実際のプランは、個別相談でお話を聞いてから設計します。<br>サポート形式：定期のパーソナルセッション＋LINEでの日々のフォロー</p>
+<p style="font-size:13px;color:#596676;text-align:center">※ 一例です。実際のプランは、個別相談でお話を聞いてから設計します。<br>サポート形式：定期のパーソナルセッション＋LINEでの日々のフォロー</p>
 </div>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:center">
