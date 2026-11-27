@@ -102,3 +102,6 @@ button{font-family:inherit}
 .state-grid.g5 .menu-top{flex-direction:column;align-items:flex-start;gap:10px}
 .area-tag{align-self:flex-start;font-size:11px;font-weight:900;letter-spacing:.08em;color:#9B681D;background:#F7ECD8;border-radius:999px;padding:2px 12px}
 .state-wrap .menu-ic{width:46px;min-height:46px}
+.goal-band{background:linear-gradient(145deg,#061B35,#0D2B4B);border:2px solid #B9822B;border-radius:24px;padding:34px clamp(20px,4vw,48px);text-align:center;box-shadow:0 26px 50px rgba(6,27,53,.25)}
+.goal-label{display:inline-block;font-size:12px;font-weight:900;letter-spacing:.2em;color:#061B35;background:linear-gradient(110deg,#9b681d,#f3d59a,#b9822b);border-radius:999px;padding:4px 16px;margin-bottom:14px}
+.goal-text{color:#fff;font-weight:900;font-size:clamp(19px,2.3vw,27px);line-height:1.8}
