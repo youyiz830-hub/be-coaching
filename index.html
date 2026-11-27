@@ -109,11 +109,31 @@
 <p style="max-width:680px;color:#596676">これまで300人以上と向き合ってきて、分かったことがあります。<br>人が止まる理由は、大きく3つに分かれる。</p>
 </div>
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
-<div class="card"><img src="type1.svg" alt="分かれ道で立ち止まり迷う人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ1</p><h3 style="font-size:21px;font-weight:900;color:#061B35">失敗が怖くて、止まる人</h3><p style="color:#596676;font-size:15px">正解を探しているうちに、時間だけが過ぎていく。間違えないことが、いつの間にか目的になっている。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 行動を止めている「思い込み」に気づく。</p></div></div>
-<div class="card"><img src="type2.svg" alt="霧の中で進む方向を探す人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ2</p><h3 style="font-size:21px;font-weight:900;color:#061B35">行き先が見えなくて、止まる人</h3><p style="color:#596676;font-size:15px">頑張れる。でも、何のために頑張っているのか分からない。他人の正解を、自分の夢だと思い込んでいる。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 本当に望む未来を、自分の言葉で決める。</p></div></div>
-<div class="card"><img src="type3.svg" alt="歯車とパズルで仕組みを組み立てる人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ3</p><h3 style="font-size:21px;font-weight:900;color:#061B35">決めたのに、続かなくて止まる人</h3><p style="color:#596676;font-size:15px">熱はある。覚悟もある。ただ、毎日に落とし込めていない。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 理想から逆算した行動と、続く仕組みをつくる。</p></div></div>
+<div class="card type-card" data-type="t1"><img src="type1.svg" alt="分かれ道で立ち止まり迷う人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ1</p><h3 style="font-size:21px;font-weight:900;color:#061B35">失敗が怖くて、止まる人</h3><p style="color:#596676;font-size:15px">正解を探しているうちに、時間だけが過ぎていく。間違えないことが、いつの間にか目的になっている。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 行動を止めている「思い込み」に気づく。</p><button type="button" class="pick-type" data-type="t1" aria-pressed="false">これが近い</button></div></div>
+<div class="card type-card" data-type="t2"><img src="type2.svg" alt="霧の中で進む方向を探す人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ2</p><h3 style="font-size:21px;font-weight:900;color:#061B35">行き先が見えなくて、止まる人</h3><p style="color:#596676;font-size:15px">頑張れる。でも、何のために頑張っているのか分からない。他人の正解を、自分の夢だと思い込んでいる。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 本当に望む未来を、自分の言葉で決める。</p><button type="button" class="pick-type" data-type="t2" aria-pressed="false">これが近い</button></div></div>
+<div class="card type-card" data-type="t3"><img src="type3.svg" alt="歯車とパズルで仕組みを組み立てる人のイラスト" style="display:block;width:100%;height:auto"><div style="padding:22px 26px 26px;display:flex;flex-direction:column;gap:10px"><p class="chip" style="align-self:flex-start;background:#061B35;color:#F3D59A">タイプ3</p><h3 style="font-size:21px;font-weight:900;color:#061B35">決めたのに、続かなくて止まる人</h3><p style="color:#596676;font-size:15px">熱はある。覚悟もある。ただ、毎日に落とし込めていない。</p><p style="font-size:14px;font-weight:700;color:#061B35;background:#F7ECD8;border-radius:10px;padding:10px 14px">→ 理想から逆算した行動と、続く仕組みをつくる。</p><button type="button" class="pick-type" data-type="t3" aria-pressed="false">これが近い</button></div></div>
 </div>
 <p class="serif" style="text-align:center;font-size:clamp(18px,2vw,24px);font-weight:900;color:#061B35;line-height:1.8">だから、決まったカリキュラムは渡しません。<br>あなたが止まっている場所から、始めます。</p>
+<div class="builder" id="builder">
+<p class="b-title serif">あなたなら、どう向き合う？</p>
+<p class="b-sub">2つ選ぶと、あなたに合わせたプランの例ができあがります。</p>
+<div class="b-q"><span>質問1</span><p>止まっている理由に近いのは？</p></div>
+<div class="b-row" id="type-row">
+<button type="button" class="b-opt" data-type="t1">失敗が怖くて、止まっている</button>
+<button type="button" class="b-opt" data-type="t2">行き先が見えなくて、止まっている</button>
+<button type="button" class="b-opt" data-type="t3">決めたのに、続かなくて止まっている</button>
+</div>
+<div class="b-q"><span>質問2</span><p>変わりたいのは、どの分野？</p></div>
+<div class="b-row" id="area-row">
+<button type="button" class="b-opt" data-area="career">キャリア</button>
+<button type="button" class="b-opt" data-area="indep">独立</button>
+<button type="button" class="b-opt" data-area="side">副業</button>
+<button type="button" class="b-opt" data-area="biz">事業</button>
+<button type="button" class="b-opt" data-area="team">マネジメント</button>
+<button type="button" class="b-opt" data-area="self">まだ分からない</button>
+</div>
+<div class="b-result" id="b-result" aria-live="polite"></div>
+</div>
 </div>
 </section>
 
@@ -166,28 +186,6 @@
 <p class="goal-label">ゴール</p>
 <p class="goal-text serif">得意な分野で、自分の強みを発揮して、<br>苦なく、夢中で人の役に立つ。<br><span class="gold">結果を出しながら、人生を楽しむ。</span></p>
 </div>
-</div>
-
-<div class="combo-box">
-<div style="display:flex;flex-direction:column;gap:14px;align-items:center;text-align:center">
-<p style="font-weight:900;color:#061B35;font-size:clamp(18px,2vw,22px)">あなたは、どんな状態になりたい？</p>
-<p style="font-size:14px;color:#596676">叶えたい未来を選ぶと、目指す状態が上で光ります。</p>
-<div id="plan-tabs" class="tab-row"></div>
-</div>
-<div class="combo-result">
-<div class="combo-left">
-<p style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#F3D59A">プランの例</p>
-<p id="plan-title" style="font-weight:900;font-size:clamp(19px,2vw,23px);line-height:1.55;color:#fff"></p>
-<p id="plan-who" style="color:#D8E0E9;font-size:14px"></p>
-<p style="font-size:12px;color:#F3D59A;font-weight:700;padding-top:4px">目指す状態</p>
-<div id="plan-combo" style="display:flex;flex-wrap:wrap;gap:8px;align-items:center"></div>
-</div>
-<div class="combo-right">
-<p style="font-size:12px;font-weight:700;letter-spacing:.14em;color:#9B681D;padding-bottom:6px">一緒に進む道のり</p>
-<div id="plan-steps"></div>
-</div>
-</div>
-<p style="font-size:13px;color:#596676;text-align:center">※ 一例です。実際のプランは、個別相談でお話を聞いてから設計します。<br>サポート形式：定期のパーソナルセッション＋LINEでの日々のフォロー</p>
 </div>
 
 <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;align-items:center">
