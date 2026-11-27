@@ -28,3 +28,32 @@ button{font-family:inherit}
 .combo{display:inline-block;border-radius:999px;padding:6px 14px;font-size:13px;font-weight:700;background:rgba(243,213,154,.16);border:1px solid rgba(243,213,154,.5);color:#F3D59A}
 :focus-visible{outline:3px solid #B9822B;outline-offset:3px}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* --- セミナー（枠線）ボタン / 無料相談は .cta3d（塗り） --- */
+.btn-seminar{display:inline-block;background:rgba(255,255,255,.75);color:#061B35;border:2px solid #061B35;font-weight:900;text-decoration:none;border-radius:999px;white-space:nowrap;transition:all .2s}
+.btn-seminar:hover{background:#061B35;color:#F3D59A}
+.btn-seminar.on-dark{background:transparent;color:#F3D59A;border-color:#F3D59A}
+.btn-seminar.on-dark:hover{background:#F3D59A;color:#061B35}
+.head-btn{font-size:13px;padding:11px 18px}
+/* --- セミナー日程 --- */
+.schedule{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.schedule li{display:flex;flex-wrap:wrap;gap:6px 16px;align-items:baseline;justify-content:space-between;padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.06);border:1px solid rgba(243,213,154,.3);color:#fff}
+.schedule b{font-size:17px;font-weight:900}
+.schedule span{font-size:14px;color:#F3D59A;font-weight:700}
+/* --- 変化の事例 --- */
+.story{display:flex;flex-direction:column}
+.story span{display:block;font-size:12px;font-weight:700;color:#596676}
+.story p{margin:0}
+.st-q{padding:22px 24px;background:#F4F6F8}
+.st-q p{color:#3A4757;font-weight:700}
+.st-r{padding:14px 24px 0}
+.st-r p{color:#1B2633;font-weight:700;font-size:15px}
+.st-now{margin:16px 24px 0;padding:14px 16px;border-radius:12px;background:#FCF8F0;border:1px solid rgba(185,130,43,.35)}
+.st-now span{font-weight:900}
+.st-now p{color:#061B35;font-weight:900;font-size:15px}
+.st-who{margin-top:auto!important;padding:14px 24px 20px;font-size:13px;color:#596676}
+@media (max-width:760px){.btn-seminar{padding:15px 22px!important;font-size:15px!important}.head-btn{font-size:12px!important;padding:9px 12px!important}}
+@media (max-width:480px){.hide-xs{display:none!important}}
+.ib{display:inline-block}
+.hero-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}}

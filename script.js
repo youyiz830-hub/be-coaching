@@ -1,5 +1,7 @@
-// 公式LINEのURLをここに設定すると、すべての相談ボタンのリンク先に反映されます
+// 公式LINEのURLをここに設定すると、すべての「無料相談」ボタンのリンク先に反映されます
 const LINE_URL = '';
+// セミナー申込ページのURLをここに設定すると、すべての「セミナーに参加する」ボタンに反映されます
+const SEMINAR_URL = '';
 
 const data = [
       { id: 'career', label: 'キャリアを切り拓きたい', title: '本当に望むキャリアを選び、迷わず進める状態へ', who: '今の会社でのキャリアアップ、転職、独立。どれを選ぶべきか決めきれない方に。', combo: ['自己理解', 'コーチング', 'キャリア開発'], steps: ['本当に望むキャリアと、選択を止めている前提を明確にする', '強み・機能を言語化し、見える選択肢を広げる', '次のポジション・転職・独立へ、行動計画を立てて前進する'] },
@@ -25,4 +27,8 @@ render('career');
 
 if (LINE_URL) {
   document.querySelectorAll('[data-line]').forEach((a) => { a.href = LINE_URL; a.target = '_blank'; a.rel = 'noopener'; });
+}
+
+if (SEMINAR_URL) {
+  document.querySelectorAll('[data-seminar]').forEach((a) => { a.href = SEMINAR_URL; a.target = '_blank'; a.rel = 'noopener'; });
 }
